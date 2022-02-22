@@ -39,7 +39,11 @@ $PAGE->set_heading(get_string('pluginname', 'block_trax'));
 
 // Form definition.
 $form = new settings_form();
-$form->set_data(['courseid' => $courseid, 'blockid' => $blockid]);
+$form->set_data([
+    'courseid' => $courseid,
+    'blockid' => $blockid,
+    'target' => \logstore_trax\src\config::course_target($COURSE->id)
+]);
 
 // Form processing.
 if ($form->is_cancelled()) {
