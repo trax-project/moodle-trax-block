@@ -37,7 +37,7 @@ class settings_form extends moodleform {
             'select',
             'target',
             get_string('target', 'block_trax'),
-            \logstore_trax\src\config::targets()
+            \logstore_trax\src\config::targets(true)
         );
 
         $this->add_action_buttons();
