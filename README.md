@@ -5,4 +5,5 @@
 
 ## Prerequisites
 
-Install and configure the [Trax Logs](https://github.com/trax-project/moodle-trax-logs) plugin.
+Install and configure the [Trax Logs](https://github.com/trax-project/moodle-trax-logs) plugin
+for Moodle 3.9 (version 2020060901+ required).
